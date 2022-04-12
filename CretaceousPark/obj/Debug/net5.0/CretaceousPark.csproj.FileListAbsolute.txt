@@ -26,3 +26,10 @@
 /Users/britwallace/Desktop/CretaceousPark.Solution/CretaceousPark/obj/Debug/net5.0/ref/CretaceousPark.dll
 /Users/britwallace/Desktop/CretaceousPark.Solution/CretaceousPark/obj/Debug/net5.0/CretaceousPark.pdb
 /Users/britwallace/Desktop/CretaceousPark.Solution/CretaceousPark/obj/Debug/net5.0/CretaceousPark.genruntimeconfig.cache
+/Users/britwallace/Desktop/CretaceousPark.Solution/CretaceousPark/bin/Debug/net5.0/Humanizer.dll
+/Users/britwallace/Desktop/CretaceousPark.Solution/CretaceousPark/bin/Debug/net5.0/Microsoft.EntityFrameworkCore.dll
+/Users/britwallace/Desktop/CretaceousPark.Solution/CretaceousPark/bin/Debug/net5.0/Microsoft.EntityFrameworkCore.Abstractions.dll
+/Users/britwallace/Desktop/CretaceousPark.Solution/CretaceousPark/bin/Debug/net5.0/Microsoft.EntityFrameworkCore.Design.dll
+/Users/britwallace/Desktop/CretaceousPark.Solution/CretaceousPark/bin/Debug/net5.0/Microsoft.EntityFrameworkCore.Relational.dll
+/Users/britwallace/Desktop/CretaceousPark.Solution/CretaceousPark/bin/Debug/net5.0/MySqlConnector.dll
+/Users/britwallace/Desktop/CretaceousPark.Solution/CretaceousPark/bin/Debug/net5.0/Pomelo.EntityFrameworkCore.MySql.dll
