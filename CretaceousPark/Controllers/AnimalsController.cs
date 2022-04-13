@@ -22,9 +22,30 @@ namespace CretaceousPark.Controllers
 
     // GET: api/Animals
     [HttpGet]
-    public async Task<ActionResult<IEnumerable<Animal>>> Get()
+    public async Task<ActionResult<IEnumerable<Animal>>> Get(string species, string gender, string name, int minimumAge)
     {
-      return await _db.Animals.ToListAsync();
+      var query = _db.Animals.AsQueryable();
+
+      if (species != null)
+      {
+        query = query.Where(entry => entry.Species == species);
+      }
+
+      if (gender != null)
+      {
+        query = query.Where(entry => entry.Gender == gender);
+      }    
+
+      if (name != null)
+      {
+        query = query.Where(entry => entry.Name == name);
+      } 
+      if (minimumAge > 0)
+  {
+    query = query.Where(entry => entry.Age >= minimumAge);
+  }     
+
+      return await query.ToListAsync();
     }
 
     // GET: api/Animals/5
@@ -40,6 +61,8 @@ namespace CretaceousPark.Controllers
 
         return animal;
     }
+    
+    
 
     // PUT: api/Animals/5
     // To protect from overposting attacks, see https://go.microsoft.com/fwlink/?linkid=2123754
@@ -102,5 +125,6 @@ namespace CretaceousPark.Controllers
     {
       return _db.Animals.Any(e => e.AnimalId == id);
     }
+    
   }
 }
